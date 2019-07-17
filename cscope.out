@@ -1,0 +1,726 @@
+cscope 15 $HOME/work_speace/algorithm               0000003209
+	@/home/jia/work_speace/algorithm/ToFillorNottoFill .cpp
+
+1 
+	~<c¡ršg
+>
+
+2 
+	~<®gÜ™hm
+>
+
+3 
+	~<io¡»am
+>
+
+4 
+	~<c¡dio
+>
+
+5 
+	~<veùÜ
+>
+
+6 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+8 cÚ¡ 
+	gmaxn
+ = 510;
+
+9 
+	sgasStiÚ
+{
+
+10 
+	m´iû
+;
+
+11 
+	mdi¡aû
+;
+
+12 
+	mÃxt
+;
+
+13 }
+	gGAS
+ ,
+	ggass
+[
+maxn
+];
+
+14 
+	gCmax
+,
+	gD
+ ,
+	gDavg
+, 
+	gN
+;
+
+16 
+	gveùÜ
+<> 
+	gavlŸbË
+[
+maxn
+];
+
+17 
+	gcu¼ÁGasVŞum
+;
+
+18 
+	grids
+ ;
+
+28 
+	$cmp
+(
+gasStiÚ
+ 
+g1
+ , gasStiÚ 
+g2
+){
+
+29 if(
+g1
+.
+di¡aû
+!=
+g2
+.distace)
+
+30  
+g1
+.
+di¡aû
+ < 
+g2
+.distace;
+
+32  
+g1
+.
+´iû
+ <
+g2
+.price;
+
+33 
+	}
+}
+
+38 
+	$g‘avabË
+(
+rids
+){
+
+39 
+i
+ = 0 ;˜< 
+N
+ ;i++ ){
+
+40 
+j
+ = 
+i
++1; j < 
+N
+ ; j++){
+
+41 if(
+gass
+[
+i
+].
+di¡aû
++
+rids
+ > gass[
+j
+].distace){
+
+42 
+cout
+<<"g‘avabË "<<
+i
+<<" "<<
+j
+<<
+’dl
+;
+
+43 
+avlŸbË
+[
+i
+].
+	`push_back
+(
+j
+);
+
+48 if(
+avlŸbË
+[
+i
+].
+	`em±y
+()){
+
+53 
+	}
+}
+
+56 
+	$Œavl
+(
+f
+ , 
+e
+ ,&
+ä“
+ ){
+
+57 
+f
+<
+e
+){
+
+58 if(
+gass
+[
+f
+].
+´iû
+ < gass[gass[f].
+Ãxt
+].price){
+
+59 
+ä“
+ +ğ(
+Cmax
+- 
+cu¼ÁGasVŞum
+ )*
+gass
+[
+f
+].
+´iû
+;
+
+60 
+cu¼ÁGasVŞum
+ = 
+Cmax
+ - (
+gass
+[gass[
+f
+].
+Ãxt
+].
+di¡aû
+ -gass[f].di¡aû ) * 
+Davg
+;
+
+63 
+ä“
+ +=(
+gass
+[gass[
+f
+].
+Ãxt
+].
+di¡aû
+ -gass[f].di¡aû -
+cu¼ÁGasVŞum
+*
+Davg
+ )*gass[f].
+´iû
+;
+
+64 
+cu¼ÁGasVŞum
+ =0;
+
+67 
+ä“
+ +ğ(
+D
+ - 
+gass
+[
+e
+].
+di¡aû
+ - 
+cu¼ÁGasVŞum
+*
+Davg
+)*gass[e].
+´iû
+;
+
+70 
+	}
+}
+
+73 
+	$g‘Next
+(
+šdex
+ ){
+
+74 
+Ãx‰
+ = 0;
+
+75 
+mšn
+;
+
+76 
+cout
+<<"g‘Nexˆšdex:"<<
+šdex
+<<
+’dl
+;
+
+77 if(
+šdex
+ ==
+N
+ -1){
+
+80 if(
+šdex
+ ==0 && 
+gass
+[šdex].
+di¡aû
+ != 0){
+
+83 if(
+avlŸbË
+[
+šdex
+].
+	`em±y
+()){
+
+84 
+gass
+[
+šdex
+].
+Ãxt
+ =-1;
+
+87 
+mšn
+ = 
+gass
+[ 
+avlŸbË
+[
+šdex
+][0] ].
+´iû
+;
+
+88 
+Ãx‰
+ = 
+avlŸbË
+[
+šdex
+][0];
+
+89 
+i
+ = 1 ; i < 
+avlŸbË
+[
+šdex
+].
+	`size
+();i++){
+
+90 if(
+gass
+[
+avlŸbË
+[
+šdex
+][
+i
+]].
+´iû
+ < 
+mšn
+){
+
+91 
+mšn
+ =
+gass
+[
+avlŸbË
+[
+šdex
+][
+i
+]].
+´iû
+;
+
+92 
+Ãx‰
+ = 
+i
+;
+
+95 
+cout
+<<"g‘NexˆÃx‰:"<<
+Ãx‰
+<<
+’dl
+;
+
+96 
+gass
+[
+šdex
+].
+Ãxt
+ğ
+Ãx‰
+;
+
+97 
+	`g‘Next
+(
+Ãx‰
+);
+
+100 
+	}
+}
+
+101 
+boŞ
+ 
+	$judge
+Ğ&
+šdex
+ ){
+
+102 
+cout
+<<"judg"<<
+šdex
+<<
+’dl
+;
+
+103 
+šdex
+){
+
+104 if(
+gass
+[
+šdex
+].
+Ãxt
+ != -1){
+
+105 
+šdex
+ = 
+gass
+[šdex].
+Ãxt
+;
+
+106 
+cou
+
+
+109 
+šdex
+--;
+
+111 if((
+gass
+[
+šdex
+].
+di¡aû
+ +
+rids
+è> 
+D
+)
+
+114 
+cout
+<<"judg"<<"Œu"<<
+gass
+[
+šdex
+].
+di¡aû
+ +
+rids
+<<
+’dl
+;
+
+115  
+Œue
+;
+
+117 
+cout
+<<"judg"<<"çl£"<<
+’dl
+;
+
+118  
+çl£
+;
+
+121 
+	}
+}
+
+123 
+	$maš
+(){
+
+130 
+Cmax
+ = 59;
+
+131 
+D
+ = 3000;
+
+132 
+Davg
+ = 19;
+
+133 
+N
+ =3;
+
+134 
+gass
+[1].
+´iû
+ = 3.0;
+
+135 
+gass
+[1].
+di¡aû
+ = 0;
+
+136 
+gass
+[0].
+´iû
+ = 3.0;
+
+137 
+gass
+[0].
+di¡aû
+ = 314;
+
+138 
+gass
+[2].
+´iû
+ = 3.0;
+
+139 
+gass
+[2].
+di¡aû
+ = 900;
+
+141 
+	`sÜt
+(
+gass
+ , gas + 
+N
+ , 
+cmp
+);
+
+143 
+rids
+ = 
+Cmax
+ * 
+Davg
+;
+
+144 
+ä“
+;
+
+145 
+šdex
+ = 
+N
+-1;
+
+146 
+cu¼ÁGasVŞum
+ =0;
+
+147 
+	`g‘avabË
+Ğ
+rids
+);
+
+148 
+i
+ = 0 ; i< 
+N
+ ; i++){
+
+149 
+cout
+<<
+gass
+[
+i
+].
+Ãxt
+;
+
+151 
+	`g‘Next
+(0);
+
+152 
+i
+ = 0 ; i< 
+N
+ ; i++){
+
+153 
+cout
+<<
+gass
+[
+i
+].
+Ãxt
+<<
+’dl
+;
+
+155 
+boŞ
+ 
+æag
+ = 
+	`judge
+Ğ
+šdex
+);
+
+156 
+cout
+<<
+šdex
+<<
+’dl
+;
+
+157 if(!
+æag
+){
+
+158 
+	`´štf
+("Thmaximum¿v– di¡ªû = %.2f",
+gass
+[
+šdex
+].
+di¡aû
++
+rids
+);
+
+160 
+	`Œavl
+(0,
+šdex
+, 
+ä“
+);
+
+161 
+	`´štf
+("%.2f",
+ä“
+);
+
+164 
+	}
+}
+
+	@/home/jia/work_speace/algorithm/main.cpp
+
+1 
+	~<io¡»am
+>
+
+3 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+	@
+1
+.
+1
+/usr/include
+2
+96
+/home/jia/work_speace/algorithm/ToFillorNottoFill .cpp
+/home/jia/work_speace/algorithm/main.cpp

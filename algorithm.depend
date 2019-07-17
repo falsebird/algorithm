@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1552546524 source:/home/jia/work_speace/algorithm/main.cpp
+	<iostream>
+
+1552547293 source:/home/jia/work_speace/algorithm/PAT_1020.cpp
+	<cstdio>
+	<algorithm>
+	<cstring>
+
+1553049790 source:/home/jia/work_speace/algorithm/lengthIncreaseSequene.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553055562 source:/home/jia/work_speace/algorithm/LongestCommonSubsequence.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553057905 source:/home/jia/work_speace/algorithm/longestPalindromeSequence.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553069931 source:/home/jia/work_speace/algorithm/knap.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553072712 source:/home/jia/work_speace/algorithm/kuai.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+	<queue>
+
+1553145047 source:/home/jia/work_speace/algorithm/quicksort.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553149421 source:/home/jia/work_speace/algorithm/magicpoket.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553156180 source:/home/jia/work_speace/algorithm/taxt.cpp
+	<iostream>
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553223458 source:/home/jia/work_speace/algorithm/RepairTheWall.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
+1553239883 source:/home/jia/work_speace/algorithm/ToFillorNottoFill .cpp
+	<cstring>
+	<algorithm>
+	<iostream>
+	<cstdio>
+	<vector>
+
+1553501579 source:/home/jia/work_speace/algorithm/longestPalindromeSubstring.cpp
+	<cstring>
+	<algorithm>
+	<cstdio>
+
